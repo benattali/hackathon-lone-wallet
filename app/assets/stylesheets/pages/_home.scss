@@ -1,0 +1,31 @@
+// Specific CSS for your home-page
+.home{
+	min-height: 70vh;
+	width: 98vw;
+	background-color: #ADB5BD;
+}
+.home__description {
+	padding: 8rem 1rem;
+}
+.home_text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	h1{
+		font-size: 4rem;
+		margin-top: 5rem;
+	}
+	p{
+		font-size: 1.5rem;	
+	}
+
+}
+
+
+.home_img{
+	img{
+		width: 110%;
+		height: auto;
+	}
+}

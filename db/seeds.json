@@ -1,0 +1,102 @@
+[
+  {
+    "firstName": "Aharon",
+    "lastName" : "Cohen",
+    "armyID" : "183549300"
+  },
+  {
+    "firstName": "Avraham",
+    "lastName" : "Abramovitz",
+    "armyID" : "482974927"
+  },
+  {
+    "firstName": "Lidor",
+    "lastName" : "Bekel",
+    "armyID" : "759364834"
+  },
+  {
+    "firstName": "Haim",
+    "lastName" : "Bell",
+    "armyID" : "449830704"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName" : "Brandman",
+    "armyID" : "304489980"
+  },
+  {
+    "firstName": "David",
+    "lastName" : "Erlichmann",
+    "armyID" : "305749904"
+  },
+  {
+    "firstName": "Dov",
+    "lastName" : "Eidelman",
+    "armyID" : "109930245"
+  },
+  {
+    "firstName": "Eliyahu",
+    "lastName" : "Feldstein",
+    "armyID" : "474085508"
+  },
+  {
+    "firstName": "Shahar",
+    "lastName" : "Gould",
+    "armyID" : "094667832"
+  },
+  {
+    "firstName": "Bryan",
+    "lastName" : "Leighton",
+    "armyID" : "308740032"
+  },
+  {
+    "firstName": "Axel",
+    "lastName" : "Resnik",
+    "armyID" : "033890039"
+  },
+  {
+    "firstName": "Ben",
+    "lastName" : "Abitbul",
+    "armyID" : "403749729"
+  },
+  {
+    "firstName": "Ben",
+    "lastName" : "Attali",
+    "armyID" : "103773092"
+  },
+  {
+    "firstName": "Gilad",
+    "lastName" : "Frishman",
+    "armyID" : "765939075"
+  },
+  {
+    "firstName": "Liron",
+    "lastName" : "Gabay",
+    "armyID" : "485037878"
+  },
+  {
+    "firstName": "Yonatan",
+    "lastName" : "Handelman",
+    "armyID" : "407379559"
+  },
+  {
+    "firstName": "Yarden",
+    "lastName" : "Kimelman",
+    "armyID" : "047593758"
+  },
+  {
+    "firstName": "Dean",
+    "lastName" : "Mizrahi",
+    "armyID" : "595733085"
+  },
+  {
+    "firstName": "Aidan",
+    "lastName" : "Micha",
+    "armyID" : "748933084"
+  },
+  {
+    "firstName": "Moshe",
+    "lastName" : "Stein",
+    "armyID" : "748686389"
+  }
+]

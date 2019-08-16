@@ -1,0 +1,26 @@
+
+.sign__up-soldier, .sign__up-donor {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    height: 100%;
+
+    input:not([type="submit"]) {
+      box-shadow: none;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $primary;
+      color: #333333;
+      &:focus {
+        outline: $primary  auto 4px;
+      }
+    }
+    input.btn-sign-in {
+      transition: all 0.1s ease-in;
+      margin-top: 1.5rem;
+      opacity: 1;
+      &:hover {
+       opacity: 0.7;
+      }
+    }
+}

@@ -1,0 +1,66 @@
+<div class="contianer">
+  <div class="row">
+    <div class="col-md-4 offset-md-1">
+      <div class="card text-center text-white bg-secondary my-3 pb-5" style="max-width: 20rem;">
+        <div class="card-header">Donations Given</div>
+        <div class="card-body">
+          <h4 class="card-title"><%= donations_count %></h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 offset-md-1">
+      <div class="card text-center text-white bg-secondary my-3 pb-5" style="max-width: 20rem;">
+        <div class="card-header">Total Soldiers Impacted</div>
+        <div class="card-body">
+          <h4 class="card-title"><%= number_with_delimiter(@total_soldiers, :delimiter => ',') %></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-md-3 mt-5">
+      <canvas id="myChart" width="1000" height="1000"></canvas>
+    </col-md-10>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</div>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Groceries', 'Entertainment', 'Rent', 'Clothes', 'Shopping', 'Restaurants'],
+        datasets: [{
+            label: 'Price in $',
+            data: [20000, 6000, 50000, 5000, 8000, 11000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>

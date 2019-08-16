@@ -1,0 +1,34 @@
+
+<div class="container my-4">
+	<h1 class="text-center mb-4"> Your receipts </h1>
+	<div class="row">
+		<% if @receipts.blank? %>
+			<h4>There are no Receipts.</h4>
+		<% else %>
+		<% @receipts.each do |receipt| %>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="card border-primary mb-3" style="width: 20rem; height: 22rem;">
+				  <div class="card-header d-flex justify-content-between">
+				  	<div>
+				  		Receipt number: <%= receipt.number %>
+				  		<br>
+				  		<%= receipt.donation.user.last_name %>, <%= receipt.donation.user.first_name %>
+				  	</div>
+				  	<div> <%= image_tag "wallet.png", height: "50", width: "40", alt: "A green wallet" %> </div>
+				  </div>
+				  <div class="card-body">
+				    <p class="card-text mb-1"> <strong> Biling address </strong>: <%= @address.address %> </p>
+				    <p class="card-text mb-1"> <%= @address.city %>, <%= @address.state %> </p>
+				    <p class="card-text"> <%= @address.zip %> </p>
+				    <br>
+				    	<h4 class="card-text text-break"> Donated to <em> Lonely Wallet </em> in the amount of <strong> $<%= number_with_precision(receipt.donation.amount, :precision => 2, :delimiter => ',') %> </strong> </h4>
+						<div class="text-right">
+							<%= link_to "download", download_pdf_donors_user_path, class: 'btn btn-primary' %>			   
+				    	</div>
+				  </div>
+				</div>
+			</div>
+		<% end %>
+		<% end %>
+	</div>
+</div>

@@ -1,2 +1,1 @@
-# lonely-wallet
-A place where people can donate money which will be received by lone soldiers in the IDF
+Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
